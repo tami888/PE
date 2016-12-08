@@ -1,22 +1,13 @@
-import sys
-import numpy as np
-
 num1 = 1
 num2 = 2
-num3 = 0
+tmp = 0
 
 sum1 = 2
-
-while num3 <= 4000000:
-
-    num3 = num1 + num2
-
-    if num3 % 2 == 0:
-        sum1 = sum1 + num3
+while tmp <= 4000000:
+    tmp = num1 + num2
+    if tmp % 2 == 0:
+        sum1 = sum1 + tmp
 
     num1 = num2
-    num2 = num3
-
+    num2 = tmp
 print sum1
-
-
