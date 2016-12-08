@@ -1,14 +1,11 @@
-import sys
-import numpy as np
-
-list1 = []
-num = 600851475143
+prime = []
+count = 600851475143
 i = 2
-while i * i <= num:
-    while num % i == 0:
-        num /= i
-        list1.append(i)
+while 4 <= count:
+    while count % i == 0:
+        count /= i
+        prime.append(i)
     i += 1
-if num > 1:
-    list1.append(num)
-print list1
+if count > 1:
+    prime.append(count)
+print prime
