@@ -1,11 +1,16 @@
-prime = []
-count = 600851475143
-i = 2
-while 4 <= count:
-    while count % i == 0:
-        count /= i
-        prime.append(i)
-    i += 1
-if count > 1:
-    prime.append(count)
-print prime
+
+def prime_factorization(num):
+    prime_factors = []
+
+    i = 2
+    while 4 <= num:
+        while num % i == 0:
+            num /= i
+            prime_factors.append(i)
+        i += 1
+    if num > 1:
+        prime_factors.append(num)
+    print prime_factors
+
+if __name__ == '__main__':
+    prime_factorization(100)
