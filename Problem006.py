@@ -12,14 +12,13 @@
 """
 
 
-def squared(n):
+def problem6(n):
     num1 = 0
     num2 = 0
     for i in range(1, n+1):
-        tmp = i
-        num1 += tmp * tmp       # 二乗の和をnum1に代入
-        num2 += tmp             # 和の二乗を求めるためnum2に代入しておく
-    return num2 ** 2 - num1     # 和の二乗と二乗の和の差を求める
+        num1 += i * i         # 二乗の和をnum1に代入
+        num2 += i             # 和の二乗を求めるためnum2に代入しておく
+    return num2 ** 2 - num1   # 和の二乗と二乗の和の差を求める
 
 if __name__ == '__main__':
-    print squared(10)
+    print problem6(100)
