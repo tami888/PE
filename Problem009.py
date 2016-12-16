@@ -11,11 +11,11 @@ a + b + c = 1000 となるピタゴラスの三つ組が一つだけ存在する
 
 
 def Problem9(n):
-    if n < 0:
-        n = abs(n)
     for a in range(1, n+1):
         for b in range(1, n+1):
             c = n - a - b
+            if c < 0:
+                continue
             if (a ** 2 + b ** 2 == c ** 2):
                 return a * b * c
 
