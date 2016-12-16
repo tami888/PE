@@ -11,9 +11,8 @@ num1 = 1
 num2 = 1
 ans = 0
 
-while num2 <= 4000000:
+while num2 < 4000000:
     if num2 % 2 == 0:
         ans += num2
-    num1 = num2
-    num2 = num1 + num2
+    num1, num2 = num2, num1 + num2
 print ans
